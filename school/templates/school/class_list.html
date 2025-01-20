@@ -1,0 +1,15 @@
+{% extends "school/base.html" %}
+
+{% block title %}Classes{% endblock %}
+
+{% block content %}
+<h2>Classes</h2>
+<ul>
+    {% for class in classes %}
+        <li>
+            <a href="{% url 'class-detail' class.id %}">{{ class.name }}</a> 
+            ({{ class.section.name }})
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

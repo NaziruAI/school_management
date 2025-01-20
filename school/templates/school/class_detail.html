@@ -1,0 +1,9 @@
+{% extends "school/base.html" %}
+
+{% block title %}{{ class.name }}{% endblock %}
+
+{% block content %}
+<h2>{{ class.name }}</h2>
+<p>Section: {{ class.section.name }}</p>
+<p>School: {{ class.section.school.name }}</p>
+{% endblock %}

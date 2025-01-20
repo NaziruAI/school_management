@@ -1,0 +1,9 @@
+{% extends "school/base.html" %}
+
+{% block title %}{{ school.name }}{% endblock %}
+
+{% block content %}
+<h2>{{ school.name }}</h2>
+<p>Address: {{ school.address }}</p>
+<a href="{% url 'section-list' %}">View Sections</a>
+{% endblock %}

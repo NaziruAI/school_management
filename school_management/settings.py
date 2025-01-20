@@ -56,7 +56,7 @@ ROOT_URLCONF = 'school_management.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],  # Adjust as necessary
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
