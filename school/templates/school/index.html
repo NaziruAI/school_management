@@ -1,0 +1,12 @@
+{% extends 'school/base.html' %}
+
+
+{% block content %}
+    <h2>Welcome to the School Management System</h2>
+    <p>Manage schools, sections, classes, and more efficiently.</p>
+
+    <!-- You can add any specific content for the homepage here -->
+    <a href="{% url 'school-list' %}">View Schools</a><br>
+    <a href="{% url 'section-list' %}">View Sections</a><br>
+    <a href="{% url 'class-list' %}">View Classes</a>
+{% endblock %}

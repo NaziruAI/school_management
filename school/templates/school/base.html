@@ -1,29 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}School Management{% endblock %}</title>
+    <title>{% block title %}home - School Management System{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <header>
-        <h1>School Management System</h1>
-        <nav>
-            <ul>
-                <li><a href="{% url 'school-list' %}">Schools</a></li>
-                <li><a href="{% url 'section-list' %}">Sections</a></li>
-                <li><a href="{% url 'class-list' %}">Classes</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         {% block content %}
-        <!-- Content for each template will go here -->
+        <!-- Content from child templates will go here -->
         {% endblock %}
     </main>
+
     <footer>
         <p>&copy; 2025 School Management System</p>
     </footer>
